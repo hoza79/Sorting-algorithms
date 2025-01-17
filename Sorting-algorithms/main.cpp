@@ -20,6 +20,12 @@ int main(int argc, const char * argv[]) {
         std::cout << s[i] << " ";
     }
     std::cout << "\n";
-    
+    Sorting <int> new_numbers(s);
+    new_numbers.insertion_sort();
+    for(int i = 0; i < new_numbers.size(); i++){
+        std::cout << new_numbers[i] << " ";
+    }
+    std::cout << "\n";
+
     return 0;
 }
